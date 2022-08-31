@@ -9,6 +9,6 @@ public class TelaCadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_cadastro2);
+        setContentView(R.layout.activity_tela_cadastro);
     }
 }

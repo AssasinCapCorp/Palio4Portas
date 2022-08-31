@@ -13,6 +13,9 @@
             android:name=".TelaCadastro"
             android:exported="false" />
         <activity
+            android:name=".TelaLogin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
