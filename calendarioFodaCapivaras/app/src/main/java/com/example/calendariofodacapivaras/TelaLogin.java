@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,10 +21,12 @@ public class TelaLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login);
+        FirebaseApp.initializeApp(this);
+        getSupportActionBar().hide();
         login = findViewById(R.id.loginLogin);
         senha = findViewById(R.id.loginSenha);
     }
-    public void botao(){
+    public void botao(View v){
         entrar();
     }
     public void entrar(){

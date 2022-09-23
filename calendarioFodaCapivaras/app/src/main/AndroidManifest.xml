@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalendarioFodaCapivaras">
         <activity
+            android:name=".TelaMaterias"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPerfil"
+            android:exported="false" />
+        <activity
             android:name=".TelaAtividade"
             android:exported="false" />
         <activity
