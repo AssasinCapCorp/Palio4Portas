@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2A2A"
+    tools:context=".TelaPratica">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_32" />
+
+    <ImageView
+        android:id="@+id/tanguloMassa2"
+        android:layout_width="493dp"
+        android:layout_height="778dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/retangulomuitofoda" />
+
+    <ImageView
+        android:id="@+id/capivaraMuitoFoda"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tanguloMassa2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alt1"
+        app:layout_constraintVertical_bias="0.847"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/q1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="resp1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotoDaQuestao"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse_8" />
+
+    <ImageView
+        android:id="@+id/q2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:onClick="resp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/q1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/q1"
+        app:layout_constraintTop_toBottomOf="@+id/alt1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse_8" />
+
+    <ImageView
+        android:id="@+id/q3"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:onClick="resp3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/q2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/q2"
+        app:layout_constraintTop_toBottomOf="@+id/alt2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse_8" />
+
+    <ImageView
+        android:id="@+id/q4"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:onClick="resp4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/q3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/q3"
+        app:layout_constraintTop_toBottomOf="@+id/alt3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse_8" />
+
+    <ImageView
+        android:id="@+id/q5"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:onClick="resp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/q4"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="@+id/q4"
+        app:layout_constraintTop_toBottomOf="@+id/alt4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse_8" />
+
+    <ImageView
+        android:id="@+id/explicacao"
+        android:layout_width="311dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/blocoexplica__o" />
+
+    <ImageView
+        android:id="@+id/bolinha1"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/q1"
+        app:layout_constraintEnd_toEndOf="@+id/q1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/q1"
+        app:layout_constraintTop_toTopOf="@+id/q1"
+        app:srcCompat="@drawable/ellipse_5" />
+
+    <ImageView
+        android:id="@+id/bolinha2"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/q2"
+        app:layout_constraintEnd_toEndOf="@+id/q2"
+        app:layout_constraintStart_toStartOf="@+id/q2"
+        app:layout_constraintTop_toTopOf="@+id/q2"
+        app:srcCompat="@drawable/ellipse_5" />
+
+    <ImageView
+        android:id="@+id/bolinha3"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/q3"
+        app:layout_constraintEnd_toEndOf="@+id/q3"
+        app:layout_constraintStart_toStartOf="@+id/q3"
+        app:layout_constraintTop_toTopOf="@+id/q3"
+        app:srcCompat="@drawable/ellipse_5" />
+
+    <ImageView
+        android:id="@+id/bolinha4"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/q4"
+        app:layout_constraintEnd_toEndOf="@+id/q4"
+        app:layout_constraintStart_toStartOf="@+id/q4"
+        app:layout_constraintTop_toTopOf="@+id/q4"
+        app:srcCompat="@drawable/ellipse_5" />
+
+    <ImageView
+        android:id="@+id/bolinha5"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/q5"
+        app:layout_constraintEnd_toEndOf="@+id/q5"
+        app:layout_constraintStart_toStartOf="@+id/q5"
+        app:layout_constraintTop_toTopOf="@+id/q5"
+        app:srcCompat="@drawable/ellipse_5" />
+
+    <TextView
+        android:id="@+id/nomeDaQuestao"
+        android:layout_width="399dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:text="UFSC:Gostar de trap é gay?"
+        android:textAlignment="center"
+        android:textColor="#ECE4E4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tanguloMassa2"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/explicacaotxt"
+        android:layout_width="274dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Teste"
+        android:textColor="#DACEE4"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/explicacao"
+        app:layout_constraintEnd_toEndOf="@+id/explicacao"
+        app:layout_constraintStart_toStartOf="@+id/explicacao"
+        app:layout_constraintTop_toTopOf="@+id/explicacao"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/alt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="TextView"
+        android:textColor="#E3F1E7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/q1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/q1"
+        app:layout_constraintTop_toTopOf="@+id/q1" />
+
+    <TextView
+        android:id="@+id/alt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="TextView"
+        android:textColor="#E3F1E7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/q2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/q2"
+        app:layout_constraintTop_toTopOf="@+id/q2" />
+
+    <TextView
+        android:id="@+id/alt3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="TextView"
+        android:textColor="#E3F1E7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/q3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/q3"
+        app:layout_constraintTop_toTopOf="@+id/q3" />
+
+    <TextView
+        android:id="@+id/alt4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="TextView"
+        android:textColor="#E3F1E7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/q4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/q4"
+        app:layout_constraintTop_toTopOf="@+id/q4" />
+
+    <TextView
+        android:id="@+id/alt5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="TextView"
+        android:textColor="#E3F1E7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/q5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/q5"
+        app:layout_constraintTop_toTopOf="@+id/q5" />
+
+    <ImageView
+        android:id="@+id/fotoDaQuestao"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeDaQuestao"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+z</androidx.constraintlayout.widget.ConstraintLayout>

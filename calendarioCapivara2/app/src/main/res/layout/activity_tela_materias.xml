@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodetela_de_materiais"
+    tools:context=".TelaMaterias">
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="314dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/caixa" />
+
+    <ImageView
+        android:id="@+id/butMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
+        android:onClick="mat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/matem_tica" />
+
+    <ImageView
+        android:id="@+id/butHum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="humanas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/butMat"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/butMat"
+        app:layout_constraintTop_toBottomOf="@+id/butMat"
+        app:layout_constraintVertical_bias="0.068"
+        app:srcCompat="@drawable/humans" />
+
+    <ImageView
+        android:id="@+id/butCie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cie"
+        app:layout_constraintBottom_toBottomOf="@+id/butMat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/butMat"
+        app:layout_constraintTop_toTopOf="@+id/butMat"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ci_ncias_da_natureza" />
+
+    <ImageView
+        android:id="@+id/butLing"
+        android:layout_width="180dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="linguagens"
+        app:layout_constraintBottom_toBottomOf="@+id/butHum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/butHum"
+        app:layout_constraintTop_toTopOf="@+id/butHum"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/linguagens" />
+
+    <ImageView
+        android:id="@+id/butRed"
+        android:layout_width="199dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/butLing"
+        app:layout_constraintStart_toStartOf="@+id/butHum"
+        app:layout_constraintTop_toBottomOf="@+id/butHum"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/reda__o" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/retangulo_de_baixo" />
+
+    <ImageView
+        android:id="@+id/imagemDoBloco"
+        android:layout_width="220dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="0.6"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/bolinha1"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:onClick="perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/imageView34"
+        app:srcCompat="@drawable/perfil" />
+
+    <ImageView
+        android:id="@+id/explicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="home"
+        app:layout_constraintBottom_toBottomOf="@+id/bolinha1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toEndOf="@+id/bolinha1"
+        app:layout_constraintTop_toTopOf="@+id/bolinha1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="passarCalendario"
+        app:layout_constraintBottom_toBottomOf="@+id/explicacao"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintStart_toEndOf="@+id/explicacao"
+        app:layout_constraintTop_toTopOf="@+id/explicacao"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/nomeDoBlocoMaterias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E1E0F1"
+        app:layout_constraintEnd_toEndOf="@+id/imagemDoBloco"
+        app:layout_constraintStart_toStartOf="@+id/imagemDoBloco"
+        app:layout_constraintTop_toBottomOf="@+id/imagemDoBloco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

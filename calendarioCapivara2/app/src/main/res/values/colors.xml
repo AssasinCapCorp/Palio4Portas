@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cinza">#343333</color>
+    <color name="roxo_foda">#9531A9</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#343333</color>
+    <color name="preto">#1B1B1B</color>
+    <color name="purple_700">#FF000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="VERDE">#06BA63</color>
+    <color name="VERMEIO">#D81E5B</color>
+</resources>

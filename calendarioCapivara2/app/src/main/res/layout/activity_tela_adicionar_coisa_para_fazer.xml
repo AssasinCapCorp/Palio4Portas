@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    tools:context=".TelaAdicionarCoisaParaFazer">
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="431dp"
+        android:layout_height="763dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/retangulodecimamaispikadascoisa" />
+
+    <EditText
+        android:id="@+id/descricaoPika"
+        android:layout_width="338dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:fontFamily="@font/josefin_sans_semibold_italic"
+        android:hint="Título"
+        android:inputType="textPersonName"
+        android:textColorHint="#E7EAF4"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <EditText
+        android:id="@+id/diaDoLoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="coloque o dia"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#DAE0F1"
+        android:textColorHint="#8C6FCF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoPika"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/anoDoLoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="coloque o ano"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#DAE0F1"
+        android:textColorHint="#8C6FCF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView46"
+        app:layout_constraintEnd_toEndOf="@+id/mesDoLoco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mesDoLoco"
+        app:layout_constraintTop_toBottomOf="@+id/mesDoLoco"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <EditText
+        android:id="@+id/mesDoLoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="coloque o mês"
+        android:inputType="textShortMessage|number"
+        android:textAlignment="center"
+        android:textColor="#DAE0F1"
+        android:textColorHint="#8C6FCF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/diaDoLoco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diaDoLoco"
+        app:layout_constraintTop_toBottomOf="@+id/diaDoLoco"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/buttonoooo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anoDoLoco"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <EditText
+        android:id="@+id/horaDoLoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="hora:minuto"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#E8D3D3"
+        android:textColorHint="#A78DAA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/anoDoLoco"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="@+id/anoDoLoco"
+        app:layout_constraintTop_toBottomOf="@+id/anoDoLoco" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="287dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Adicione coisa para fazer"
+        android:textColor="#E2E3F1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/descricaoPika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

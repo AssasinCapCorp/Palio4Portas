@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bolinha5" type="id" />
+    <item name="bolinha4" type="id" />
+    <item name="bolinha3" type="id" />
+    <item name="bolinha2" type="id" />
+    <item name="q5" type="id" />
+    <item name="q3" type="id" />
+    <item name="q2" type="id" />
+    <item name="capivaraMuitoFoda" type="id" />
+    <item name="tanguloMassa2" type="id" />
+    <item name="explicacaotxt" type="id" />
+    <item name="alt1" type="id" />
+    <item name="alt2" type="id" />
+    <item name="alt4" type="id" />
+    <item name="alt3" type="id" />
+    <item name="alt5" type="id" />
+    <item name="fotoDaQuestao" type="id" />
+</resources>

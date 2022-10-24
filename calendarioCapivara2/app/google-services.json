@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "756579489224",
+    "firebase_url": "https://capivaras-assassinas-default-rtdb.firebaseio.com",
+    "project_id": "capivaras-assassinas",
+    "storage_bucket": "capivaras-assassinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756579489224:android:e4cd51cc66fd0fb0115cfd",
+        "android_client_info": {
+          "package_name": "com.example.calendariocapivara2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756579489224-uifs3n7r426qu11lab751rr1dssq8qu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjMpanXVHCE_xVg_Sx9PHC1trJ-eTf_iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756579489224-uifs3n7r426qu11lab751rr1dssq8qu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756579489224:android:2a4298c9c27214a5115cfd",
+        "android_client_info": {
+          "package_name": "com.example.cronograma_capivarasassasinas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756579489224-uifs3n7r426qu11lab751rr1dssq8qu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjMpanXVHCE_xVg_Sx9PHC1trJ-eTf_iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756579489224-uifs3n7r426qu11lab751rr1dssq8qu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
