@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.calendariocapivara2">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,37 +14,28 @@
         android:theme="@style/Theme.CalendarioCapivara2"
         tools:targetApi="31">
         <activity
-            android:name=".TelaProgramarSemana"
+            android:name=".Utilitis.CentralTeste"
             android:exported="false" />
         <activity
-            android:name=".TelaAdicionarCoisaParaFazer"
+            android:name=".Activity.TelaProgramarSemana"
             android:exported="false" />
         <activity
-            android:name=".TelaPratica"
+            android:name=".Activity.TelaAdicionarCoisaParaFazer"
             android:exported="false" />
         <activity
-            android:name=".ListaDeAtividade"
+            android:name=".Activity.TelaPratica"
             android:exported="false" />
         <activity
-            android:name=".TelaPerfil"
+            android:name=".Activity.ListaDeAtividade"
             android:exported="false" />
         <activity
-            android:name=".TelaMaterias"
+            android:name=".Activity.TelaLogin"
             android:exported="false" />
         <activity
-            android:name=".TelaCalendario"
+            android:name=".Activity.TelaCadastro"
             android:exported="false" />
         <activity
-            android:name=".TelaAtividade"
-            android:exported="false" />
-        <activity
-            android:name=".TelaLogin"
-            android:exported="false" />
-        <activity
-            android:name=".TelaCadastro"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,6 +47,13 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <service
+            android:name=".Firebase.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

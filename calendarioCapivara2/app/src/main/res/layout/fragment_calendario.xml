@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    tools:context=".fragments.CalendarioFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="405dp"
+        android:layout_height="772dp"
+        android:layout_marginBottom="-150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cinza_baixo_meio" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="356dp"
+        android:layout_height="263dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/retangulodecima" />
+
+    <ImageView
+        android:id="@+id/linhaCinza"
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/DSTQQSS"
+        app:layout_constraintStart_toStartOf="@+id/DSTQQSS"
+        app:layout_constraintTop_toBottomOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/linha_dos_dias" />
+
+    <ImageView
+        android:id="@+id/daySelectorDomingo"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/domingo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/domingo"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorSegunda"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/segunda"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/segunda"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorTerca"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/terca"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/terca"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorQuarta"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/quarta"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/quarta"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorQuinta"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/quinta"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/quinta"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorSexta"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toStartOf="@+id/sabado"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/sexta"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/daySelectorSabado"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domingo"
+        app:layout_constraintEnd_toEndOf="@+id/sabado"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toEndOf="@+id/sexta"
+        app:layout_constraintTop_toTopOf="@+id/DSTQQSS"
+        app:srcCompat="@drawable/retanguloseletor" />
+
+    <ImageView
+        android:id="@+id/DSTQQSS"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mes"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/d_s_t_q_q_s_s" />
+
+    <TextView
+        android:id="@+id/domingo"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linhaCinza"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/segunda"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/domingo"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza" />
+
+    <TextView
+        android:id="@+id/terca"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/segunda"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza" />
+
+    <TextView
+        android:id="@+id/quarta"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/terca"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/quinta"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/quarta"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza" />
+
+    <TextView
+        android:id="@+id/sexta"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linhaCinza"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/quinta"
+        app:layout_constraintTop_toTopOf="@+id/linhaCinza" />
+
+    <TextView
+        android:id="@+id/sabado"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="#DDDFEA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/daySelectorSexta"
+        app:layout_constraintEnd_toEndOf="@+id/linhaCinza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sexta"
+        app:layout_constraintTop_toTopOf="@+id/sexta" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="339dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView45"
+        app:layout_constraintVertical_bias="0.192"
+        app:srcCompat="@drawable/linha" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="122dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView45"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/hoje" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCalendario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView55" />
+
+    <ImageView
+        android:id="@+id/mais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toEndOf="@+id/mes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        app:srcCompat="@drawable/mais" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="236dp"
+        android:layout_height="43dp"
+
+        android:text="Mês muito foda"
+        android:textColor="#D9E2ED"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
